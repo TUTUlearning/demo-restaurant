@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover dining and celebration services at Panruti Restaurant.">
+  <title>Our Services | Panruti Restaurant</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <style>
+    .services-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;max-width:1250px;margin:30px auto 0}
+    .service-card{background:#fffaf0;border:1px solid #e0c992;box-shadow:var(--shadow);overflow:hidden;transition:transform .2s,box-shadow .2s}
+    .service-card:hover{transform:translateY(-4px);box-shadow:0 15px 32px rgba(48,9,14,.14)}
+    .service-card img{width:100%;height:205px;object-fit:cover;display:block}
+    .service-card-body{padding:20px 21px 23px}
+    .service-card h3{margin:0 0 9px;color:var(--maroon);font-size:27px}
+    .service-card p{margin:0;color:var(--muted);font-size:13px;line-height:1.85}
+    .service-number{display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;margin-bottom:12px;border:1px solid var(--gold);border-radius:50%;color:var(--maroon);font-size:14px}
+    .service-cta{max-width:950px;margin:35px auto 0;padding:32px;text-align:center;background:var(--maroon);color:#fff6e5;border:1px solid var(--gold)}
+    .service-cta h2{margin:0 0 12px;color:#f2d18b;font-size:36px}
+    .service-cta p{max-width:650px;margin:0 auto 22px;color:#f5e8d2;font-size:14px;line-height:1.8}
+    .service-cta .btn{margin:5px}
+    @media(max-width:900px){.services-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+    @media(max-width:580px){.services-grid{grid-template-columns:1fr}.service-card img{height:220px}.service-cta{padding:25px 17px}.service-cta h2{font-size:30px}}
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <div class="topbar-info">
+      <span><span class="top-icon">●</span> Panruti, Tamil Nadu</span>
+      <a href="tel:9999999999"><span class="top-icon">☎</span> 99999 99999</a>
+      <span><span class="top-icon">◷</span> 10:00 AM – 10:30 PM</span>
+    </div>
+    <div class="topbar-right">
+      <div class="socials" aria-label="Social links"><a href="#" aria-label="Facebook">f</a><a href="#" aria-label="Instagram">◎</a><a href="#" aria-label="YouTube">▶</a><a href="https://maps.google.com/?q=Panruti+Tamil+Nadu" target="_blank" rel="noopener noreferrer" aria-label="Map">⌖</a></div>
+      <a class="offer-ribbon" href="./menu.html">✧ FESTIVE SPECIALS ✧</a>
+    </div>
+  </div>
+  <header class="site-header">
+    <a href="./index.html" class="restaurant-logo" aria-label="Panruti Restaurant Home">
+      <span class="logo-ornament">♕</span><span class="logo-name">PANRUTI</span><span class="logo-subtitle">RESTAURANT</span><span class="logo-tagline">GOOD FOOD　•　HAPPY PEOPLE　•　ALWAYS TOGETHER</span>
+    </a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="./index.html">Home</a><a href="./about.html">About Us</a><a href="./ambience.html">Our Ambience</a><a href="./menu.html">Menu</a><a href="./booking.html">Table Booking</a><a class="active" href="./services.html">Services</a><a href="./media.html">Media</a><a href="./contact.html">Contact Us</a>
+    </nav>
+  </header>
+  <main>
+    <section class="page-hero">
+      <div class="section-eyebrow">Everyday Dining • Special Gatherings</div>
+      <h1>Our Services</h1>
+      <p>From a casual meal to a reason to celebrate, discover ways to enjoy time together at Panruti Restaurant.</p>
+    </section>
+    <section class="content-section">
+      <div class="section-heading-wrap" style="padding-top:0">
+        <div class="gold-flourish">⌁ ✧ ⌁</div>
+        <h2 class="section-heading">Made for Every Occasion</h2>
+        <p class="section-subtitle">Explore our sample service offerings and contact us to discuss your needs.</p>
+      </div>
+      <div class="services-grid">
+        <article class="service-card"><img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=900&q=85" alt="Restaurant dining area" loading="lazy"><div class="service-card-body"><span class="service-number">01</span><h3>Dine-In</h3><p>Enjoy a relaxed restaurant visit for lunch, dinner or a casual meal with friends and family.</p></div></article>
+        <article class="service-card"><img src="https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&w=900&q=85" alt="Family enjoying time together" loading="lazy"><div class="service-card-body"><span class="service-number">02</span><h3>Family Dining</h3><p>Bring everyone together around the table and make time for a shared meal.</p></div></article>
+        <article class="service-card"><img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=900&q=85" alt="Celebration event table" loading="lazy"><div class="service-card-body"><span class="service-number">03</span><h3>Birthday Parties</h3><p>Planning a birthday? Contact us to discuss group size, preferred date and arrangements.</p></div></article>
+        <article class="service-card"><img src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=900&q=85" alt="Event tables prepared for a gathering" loading="lazy"><div class="service-card-body"><span class="service-number">04</span><h3>Group Gatherings</h3><p>For reunions, family occasions and group meals, enquire in advance about seating and availability.</p></div></article>
+        <article class="service-card"><img src="https://images.unsplash.com/photo-1555244162-803834f70033?auto=format&fit=crop&w=900&q=85" alt="Food arranged for catering" loading="lazy"><div class="service-card-body"><span class="service-number">05</span><h3>Catering Enquiries</h3><p>Ask us whether catering or bulk meal arrangements are available for your event and location.</p></div></article>
+        <article class="service-card"><img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=900&q=85" alt="Restaurant tables ready for guests" loading="lazy"><div class="service-card-body"><span class="service-number">06</span><h3>Special Requests</h3><p>Tell us about your occasion or requirements so our team can let you know what may be possible.</p></div></article>
+      </div>
+      <div class="service-cta">
+        <div class="section-eyebrow">Let’s Plan Your Visit</div>
+        <h2>Something Special in Mind?</h2>
+        <p>Contact the restaurant to confirm which services are available, discuss your group size and check the date before making plans.</p>
+        <a class="btn" href="./booking.html">Make a Table Enquiry</a>
+        <a class="btn secondary" href="./contact.html">Contact Us</a>
+      </div>
+      <p style="max-width:950px;margin:18px auto 0;color:var(--muted);font:12px/1.8 Arial,sans-serif;text-align:center">Service descriptions are sample website content. Please confirm which services the restaurant actually provides before publishing.</p>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <a href="./index.html" class="footer-logo">PANRUTI</a><p class="footer-subtitle">RESTAURANT</p><p class="footer-motto">GOOD FOOD　•　HAPPY PEOPLE　•　ALWAYS TOGETHER</p>
+    <div class="footer-links"><a href="./index.html">Home</a><a href="./about.html">About Us</a><a href="./ambience.html">Our Ambience</a><a href="./menu.html">Menu</a><a href="./booking.html">Table Booking</a><a href="./services.html">Services</a><a href="./media.html">Media</a><a href="./contact.html">Contact Us</a></div>
+    <div class="footer-line"></div><p class="copyright">© 2026 Panruti Restaurant. All rights reserved.</p>
+  </footer>
+</body>
+</html>
