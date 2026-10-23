@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore the welcoming dining atmosphere at Panruti Restaurant.">
+  <title>Our Ambience | Panruti Restaurant</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <style>
+    .ambience-gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;max-width:1250px;margin:28px auto 0}
+    .ambience-tile{position:relative;min-height:245px;overflow:hidden;border:4px solid #fff9ed;outline:1px solid var(--line);box-shadow:var(--shadow);background:#e7d5b4}
+    .ambience-tile img{width:100%;height:100%;min-height:245px;object-fit:cover;transition:transform .45s}
+    .ambience-tile:hover img{transform:scale(1.05)}
+    .ambience-tile figcaption{position:absolute;inset:auto 0 0;padding:35px 16px 14px;color:#fff8e8;background:linear-gradient(transparent,rgba(36,3,8,.9));font-size:22px}
+    .ambience-note{max-width:800px;margin:25px auto 0;text-align:center;color:var(--muted);font-size:13px;line-height:1.9}
+    @media(max-width:760px){.ambience-gallery{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.ambience-tile,.ambience-tile img{min-height:190px}}
+    @media(max-width:480px){.ambience-gallery{grid-template-columns:1fr}.ambience-tile,.ambience-tile img{min-height:220px}}
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <div class="topbar-info">
+      <span><span class="top-icon">●</span> Panruti, Tamil Nadu</span>
+      <a href="tel:9999999999"><span class="top-icon">☎</span> 99999 99999</a>
+      <span><span class="top-icon">◷</span> 10:00 AM – 10:30 PM</span>
+    </div>
+    <div class="topbar-right">
+      <div class="socials" aria-label="Social links"><a href="#" aria-label="Facebook">f</a><a href="#" aria-label="Instagram">◎</a><a href="#" aria-label="YouTube">▶</a><a href="https://maps.google.com/?q=Panruti+Tamil+Nadu" target="_blank" rel="noopener noreferrer" aria-label="Map">⌖</a></div>
+      <a class="offer-ribbon" href="./menu.html">✧ FESTIVE SPECIALS ✧</a>
+    </div>
+  </div>
+  <header class="site-header">
+    <a href="./index.html" class="restaurant-logo" aria-label="Panruti Restaurant Home">
+      <span class="logo-ornament">♕</span><span class="logo-name">PANRUTI</span><span class="logo-subtitle">RESTAURANT</span><span class="logo-tagline">GOOD FOOD　•　HAPPY PEOPLE　•　ALWAYS TOGETHER</span>
+    </a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="./index.html">Home</a><a href="./about.html">About Us</a><a class="active" href="./ambience.html">Our Ambience</a><a href="./menu.html">Menu</a><a href="./booking.html">Table Booking</a><a href="./services.html">Services</a><a href="./media.html">Media</a><a href="./contact.html">Contact Us</a>
+    </nav>
+  </header>
+  <main>
+    <section class="page-hero">
+      <div class="section-eyebrow">Comfort • Warmth • Togetherness</div>
+      <h1>Our Ambience</h1>
+      <p>A welcoming setting for everyday meals, family time and memorable celebrations.</p>
+    </section>
+    <section class="content-section">
+      <div class="two-column">
+        <div class="content-copy">
+          <div class="section-eyebrow">Feel at Home</div>
+          <h2>A Place for Every Occasion</h2>
+          <p>We believe a restaurant should make people feel comfortable from the moment they arrive. Whether you are meeting friends, sharing a family meal or celebrating something special, we want the atmosphere to help make your visit enjoyable.</p>
+          <p>Browse the gallery for visual inspiration. These are illustrative stock photographs; replace them with real Panruti Restaurant photos when available.</p>
+          <a class="btn secondary" href="./booking.html">Enquire About a Visit</a>
+        </div>
+        <img class="content-image" src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1100&q=85" alt="Warm restaurant dining room" loading="lazy">
+      </div>
+      <div class="ambience-gallery">
+        <figure class="ambience-tile"><img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=900&q=85" alt="Restaurant interior with dining tables" loading="lazy"><figcaption>Warm Dining Spaces</figcaption></figure>
+        <figure class="ambience-tile"><img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=900&q=85" alt="Prepared dining table" loading="lazy"><figcaption>Ready to Welcome You</figcaption></figure>
+        <figure class="ambience-tile"><img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=900&q=85" alt="Elegant restaurant setting" loading="lazy"><figcaption>Evening Dining</figcaption></figure>
+        <figure class="ambience-tile"><img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=900&q=85" alt="Celebration table arrangement" loading="lazy"><figcaption>Celebrate Together</figcaption></figure>
+        <figure class="ambience-tile"><img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=900&q=85" alt="Restaurant seating area" loading="lazy"><figcaption>Comfortable Corners</figcaption></figure>
+        <figure class="ambience-tile"><img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=900&q=85" alt="Fresh food served for guests" loading="lazy"><figcaption>Food Worth Sharing</figcaption></figure>
+      </div>
+      <p class="ambience-note">Please note: the photographs on this demonstration website are sample images from Unsplash and may not show the actual restaurant premises.</p>
+    </section>
+    <section class="content-section alt">
+      <div class="two-column">
+        <img class="content-image" src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=1100&q=85" alt="A table set for a special gathering" loading="lazy">
+        <div class="content-copy">
+          <div class="section-eyebrow">Planning Something Special?</div>
+          <h2>Let’s Make It Memorable</h2>
+          <p>For family gatherings, birthdays or other occasions, contact the restaurant directly to discuss your requirements and availability.</p>
+          <div class="hero-actions"><a class="btn" href="./services.html">Explore Services</a><a class="btn secondary" href="tel:9999999999">Call the Restaurant</a></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <a href="./index.html" class="footer-logo">PANRUTI</a><p class="footer-subtitle">RESTAURANT</p><p class="footer-motto">GOOD FOOD　•　HAPPY PEOPLE　•　ALWAYS TOGETHER</p>
+    <div class="footer-links"><a href="./index.html">Home</a><a href="./about.html">About Us</a><a href="./ambience.html">Our Ambience</a><a href="./menu.html">Menu</a><a href="./booking.html">Table Booking</a><a href="./services.html">Services</a><a href="./media.html">Media</a><a href="./contact.html">Contact Us</a></div>
+    <div class="footer-line"></div><p class="copyright">© 2026 Panruti Restaurant. All rights reserved.</p>
+  </footer>
+</body>
+</html>
