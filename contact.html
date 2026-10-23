@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Panruti Restaurant for enquiries, table reservations and special occasions.">
+  <title>Contact Us | Panruti Restaurant</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <style>
+    .contact-hero {
+      min-height: 350px; display: grid; place-items: center; text-align: center;
+      padding: 72px 22px; color: #fff8e9;
+      background: linear-gradient(90deg, rgba(53, 8, 19, .91), rgba(53, 8, 19, .48)),
+        url("https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1800&q=85") center/cover;
+    }
+    .contact-hero .eyebrow { color: #e4c47b; text-transform: uppercase; letter-spacing: .22em; font-size: .78rem; font-weight: 700; }
+    .contact-hero h1 { font-family: "Cormorant Garamond", serif; font-size: clamp(3.1rem, 7vw, 5.5rem); line-height: .95; margin: 15px 0; }
+    .contact-hero p { max-width: 600px; margin: auto; color: #f4e8d5; line-height: 1.8; }
+    .contact-section { max-width: 1180px; margin: auto; padding: 76px 22px 88px; }
+    .contact-intro { text-align: center; max-width: 700px; margin: 0 auto 42px; }
+    .contact-intro .eyebrow { color: #9c6d2c; text-transform: uppercase; letter-spacing: .18em; font-size: .76rem; font-weight: 700; }
+    .contact-intro h2 { color: #4a101d; font-family: "Cormorant Garamond", serif; font-size: clamp(2.5rem, 5vw, 3.7rem); line-height: 1; margin: 12px 0; }
+    .contact-intro p { color: #66564e; line-height: 1.8; margin: 0; }
+    .contact-layout { display: grid; grid-template-columns: .9fr 1.1fr; gap: 28px; align-items: stretch; }
+    .contact-info { background: #4a101d; color: #fff8e9; padding: 34px; }
+    .contact-info h3, .contact-form h3 { font-family: "Cormorant Garamond", serif; font-size: 2.2rem; margin: 0 0 12px; }
+    .contact-info > p { color: #ead9c4; line-height: 1.8; margin: 0 0 28px; }
+    .info-item { border-top: 1px solid rgba(255,255,255,.2); padding: 18px 0; }
+    .info-item strong { display: block; color: #e4c47b; font-size: .76rem; letter-spacing: .12em; text-transform: uppercase; margin-bottom: 6px; }
+    .info-item p, .info-item a { color: #fff8e9; margin: 0; line-height: 1.7; text-decoration: none; overflow-wrap: anywhere; }
+    .contact-info .quick-links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
+    .contact-info .quick-links a { display: inline-block; border: 1px solid #d5b16a; color: #fff8e9; padding: 10px 14px; text-decoration: none; font-weight: 600; font-size: .9rem; }
+    .contact-form { background: #f8f1e6; padding: 34px; border: 1px solid #eadcc8; }
+    .contact-form h3 { color: #4a101d; }
+    .contact-form > p { color: #66564e; line-height: 1.7; margin: 0 0 24px; }
+    .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 17px; }
+    .field { display: flex; flex-direction: column; gap: 7px; }
+    .field.full { grid-column: 1 / -1; }
+    .field label { color: #4a101d; font-size: .88rem; font-weight: 700; }
+    .field input, .field select, .field textarea { width: 100%; box-sizing: border-box; border: 1px solid #d7c7b3; background: #fffdf8; padding: 12px 13px; font: inherit; color: #35251f; border-radius: 2px; }
+    .field input:focus, .field select:focus, .field textarea:focus { outline: 2px solid #d5b16a; outline-offset: 1px; }
+    .field textarea { min-height: 125px; resize: vertical; }
+    .contact-submit { margin-top: 20px; border: 0; cursor: pointer; background: #4a101d; color: #fff8e9; padding: 14px 23px; font: inherit; font-weight: 700; }
+    .form-note { margin: 12px 0 0; font-size: .82rem; color: #776458; line-height: 1.6; }
+    .map-section { max-width: 1180px; margin: 0 auto 80px; padding: 0 22px; }
+    .map-placeholder { background: #f5ecdd; border: 1px dashed #b88b43; padding: 35px 22px; text-align: center; color: #6a5143; line-height: 1.8; }
+    .map-placeholder strong { display: block; font-family: "Cormorant Garamond", serif; color: #4a101d; font-size: 2rem; margin-bottom: 5px; }
+    @media (max-width: 800px) { .contact-layout { grid-template-columns: 1fr; } }
+    @media (max-width: 520px) {
+      .contact-section { padding: 54px 16px 64px; }
+      .contact-info, .contact-form { padding: 25px 20px; }
+      .form-grid { grid-template-columns: 1fr; }
+      .field.full { grid-column: auto; }
+      .map-section { padding: 0 16px; margin-bottom: 55px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <span>Panruti, Tamil Nadu</span>
+      <span>Open daily · 10:00 AM – 10:30 PM</span>
+      <a href="tel:9999999999">Call: 99999 99999</a>
+    </div>
+  </div>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="./index.html" aria-label="Panruti Restaurant home">
+        <span class="brand-mark">♕</span>
+        <span class="brand-text"><strong>PANRUTI</strong><small>RESTAURANT</small><em>GOOD FOOD • HAPPY PEOPLE • ALWAYS TOGETHER</em></span>
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="./index.html">Home</a>
+        <a href="./about.html">About</a>
+        <a href="./ambience.html">Ambience</a>
+        <a href="./menu.html">Menu</a>
+        <a href="./booking.html">Book a Table</a>
+        <a href="./services.html">Services</a>
+        <a href="./media.html">Gallery</a>
+        <a class="active" href="./contact.html" aria-current="page">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="contact-hero">
+      <div>
+        <div class="eyebrow">We’d love to hear from you</div>
+        <h1>Let’s Get in Touch</h1>
+        <p>Questions, reservations or a special occasion in mind? We’re here to help make your visit memorable.</p>
+      </div>
+    </section>
+
+    <section class="contact-section">
+      <div class="contact-intro">
+        <div class="eyebrow">Contact & enquiries</div>
+        <h2>Your Table Is Waiting</h2>
+        <p>Reach out to us for table reservations, family gatherings, event enquiries or anything else you need to know.</p>
+      </div>
+
+      <div class="contact-layout">
+        <aside class="contact-info">
+          <h3>Contact Details</h3>
+          <p>We look forward to welcoming you. Please update the sample details below with the restaurant’s actual contact information before publishing.</p>
+          <div class="info-item">
+            <strong>Visit Us</strong>
+            <p>Panruti, Cuddalore District,<br>Tamil Nadu, India</p>
+          </div>
+          <div class="info-item">
+            <strong>Call Us</strong>
+            <a href="tel:9999999999">+91 99999 99999</a>
+          </div>
+          <div class="info-item">
+            <strong>Opening Hours</strong>
+            <p>Every day: 10:00 AM – 10:30 PM</p>
+          </div>
+          <div class="info-item">
+            <strong>Social Media</strong>
+            <p>Add your official Instagram and Facebook links here.</p>
+          </div>
+          <div class="quick-links">
+            <a href="./booking.html">Book a Table</a>
+            <a href="./menu.html">View Menu</a>
+          </div>
+        </aside>
+
+        <section class="contact-form">
+          <h3>Send an Enquiry</h3>
+          <p>Fill in the details and continue to WhatsApp to send your message.</p>
+          <form id="contactForm">
+            <div class="form-grid">
+              <div class="field">
+                <label for="name">Your name *</label>
+                <input id="name" name="name" type="text" autocomplete="name" required>
+              </div>
+              <div class="field">
+                <label for="phone">Phone number *</label>
+                <input id="phone" name="phone" type="tel" autocomplete="tel" required>
+              </div>
+              <div class="field full">
+                <label for="topic">Enquiry type *</label>
+                <select id="topic" name="topic" required>
+                  <option value="">Choose an option</option>
+                  <option>Table reservation</option>
+                  <option>Family gathering</option>
+                  <option>Birthday or celebration</option>
+                  <option>Food and menu enquiry</option>
+                  <option>Other enquiry</option>
+                </select>
+              </div>
+              <div class="field full">
+                <label for="message">Your message *</label>
+                <textarea id="message" name="message" placeholder="Tell us how we can help..." required></textarea>
+              </div>
+            </div>
+            <button class="contact-submit" type="submit">Send Enquiry on WhatsApp</button>
+            <p class="form-note">This form opens WhatsApp with a prepared message. It does not send anything automatically. Replace the sample WhatsApp number in the code with the restaurant’s real number.</p>
+          </form>
+        </section>
+      </div>
+    </section>
+
+    <section class="map-section">
+      <div class="map-placeholder">
+        <strong>Find Us in Panruti</strong>
+        Add the restaurant’s exact address and Google Maps embed here once the location is confirmed.
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div><strong>PANRUTI RESTAURANT</strong><p>Good food. Happy people. Always together.</p></div>
+      <div class="footer-links">
+        <a href="./about.html">About</a><a href="./menu.html">Menu</a><a href="./booking.html">Booking</a><a href="./media.html">Gallery</a>
+      </div>
+      <small>© 2026 Panruti Restaurant. All rights reserved.</small>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("contactForm").addEventListener("submit", function (event) {
+      event.preventDefault();
+      const name = document.getElementById("name").value.trim();
+      const phone = document.getElementById("phone").value.trim();
+      const topic = document.getElementById("topic").value;
+      const message = document.getElementById("message").value.trim();
+
+      // Replace this placeholder with the restaurant's WhatsApp number, including country code, digits only.
+      const whatsappNumber = "919999999999";
+      const text = [
+        "Hello Panruti Restaurant,",
+        "",
+        "I have an enquiry.",
+        "Name: " + name,
+        "Phone: " + phone,
+        "Enquiry type: " + topic,
+        "Message: " + message
+      ].join("\n");
+
+      window.open("https://wa.me/" + whatsappNumber + "?text=" + encodeURIComponent(text), "_blank", "noopener,noreferrer");
+    });
+  </script>
+</body>
+</html>
