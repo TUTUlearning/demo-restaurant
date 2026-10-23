@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore the food, ambience and special moments at Panruti Restaurant.">
+  <title>Gallery | Panruti Restaurant</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <style>
+    .gallery-hero {
+      min-height: 370px;
+      display: grid;
+      place-items: center;
+      text-align: center;
+      padding: 80px 22px;
+      color: #fff8e9;
+      background:
+        linear-gradient(90deg, rgba(50, 7, 17, .88), rgba(50, 7, 17, .38)),
+        url("https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1800&q=85") center/cover;
+    }
+    .gallery-hero .eyebrow { color: #e4c47b; letter-spacing: .22em; text-transform: uppercase; font-size: .78rem; font-weight: 700; }
+    .gallery-hero h1 { font-family: "Cormorant Garamond", serif; font-size: clamp(3.2rem, 7vw, 5.7rem); line-height: .95; margin: 16px 0; font-weight: 600; }
+    .gallery-hero p { max-width: 620px; margin: 0 auto; color: #f4e8d5; font-size: 1.05rem; line-height: 1.8; }
+    .gallery-section { max-width: 1240px; margin: 0 auto; padding: 76px 22px 88px; }
+    .gallery-heading { text-align: center; max-width: 720px; margin: 0 auto 38px; }
+    .gallery-heading .eyebrow { color: #9c6d2c; text-transform: uppercase; letter-spacing: .18em; font-weight: 700; font-size: .76rem; }
+    .gallery-heading h2 { color: #4a101d; font-family: "Cormorant Garamond", serif; font-size: clamp(2.5rem, 5vw, 3.8rem); line-height: 1; margin: 12px 0; }
+    .gallery-heading p { color: #66564e; line-height: 1.8; margin: 0; }
+    .gallery-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); grid-auto-rows: 250px; gap: 18px; }
+    .gallery-card { position: relative; overflow: hidden; border-radius: 5px; background: #eadfce; isolation: isolate; }
+    .gallery-card:first-child { grid-row: span 2; }
+    .gallery-card:nth-child(4) { grid-column: span 2; }
+    .gallery-card img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .5s ease; }
+    .gallery-card:hover img { transform: scale(1.06); }
+    .gallery-card::after { content: ""; position: absolute; inset: 35% 0 0; background: linear-gradient(transparent, rgba(38, 7, 14, .82)); z-index: 1; pointer-events: none; }
+    .gallery-caption { position: absolute; z-index: 2; bottom: 18px; left: 20px; right: 20px; color: #fff8eb; }
+    .gallery-caption span { color: #e6c87f; text-transform: uppercase; letter-spacing: .16em; font-size: .68rem; font-weight: 700; }
+    .gallery-caption h3 { font-family: "Cormorant Garamond", serif; font-size: 1.8rem; margin: 5px 0 0; line-height: 1.1; }
+    .gallery-note { margin-top: 30px; padding: 20px 24px; background: #f5ecdd; border-left: 3px solid #b88b43; color: #6a5143; line-height: 1.7; }
+    .gallery-cta { text-align: center; padding: 58px 20px; background: #4a101d; color: #fff8e9; }
+    .gallery-cta h2 { font-family: "Cormorant Garamond", serif; font-size: clamp(2.3rem, 5vw, 3.6rem); margin: 0 0 10px; }
+    .gallery-cta p { color: #ead9c4; margin: 0 auto 24px; max-width: 600px; line-height: 1.8; }
+    .gallery-cta a { display: inline-block; background: #d5b16a; color: #35101a; text-decoration: none; padding: 13px 24px; font-weight: 700; border-radius: 2px; }
+    @media (max-width: 800px) {
+      .gallery-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); grid-auto-rows: 220px; }
+      .gallery-card:first-child { grid-row: span 1; }
+      .gallery-card:nth-child(4) { grid-column: span 1; }
+    }
+    @media (max-width: 520px) {
+      .gallery-grid { grid-template-columns: 1fr; grid-auto-rows: 245px; }
+      .gallery-section { padding: 55px 16px 65px; }
+      .gallery-hero { min-height: 310px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <div class="topbar-info">
+      <span><span class="top-icon">●</span> Panruti, Tamil Nadu</span>
+      <a href="tel:9999999999"><span class="top-icon">☎</span> 99999 99999</a>
+      <span><span class="top-icon">◷</span> 10:00 AM – 10:30 PM</span>
+    </div>
+    <div class="topbar-right">
+      <div class="socials" aria-label="Social links"><a href="#" aria-label="Facebook">f</a><a href="#" aria-label="Instagram">◎</a><a href="#" aria-label="YouTube">▶</a><a href="https://maps.google.com/?q=Panruti+Tamil+Nadu" target="_blank" rel="noopener noreferrer" aria-label="Map">⌖</a></div>
+      <a class="offer-ribbon" href="./menu.html">✧ FESTIVE SPECIALS ✧</a>
+    </div>
+  </div>
+  <header class="site-header">
+    <a href="./index.html" class="restaurant-logo" aria-label="Panruti Restaurant Home">
+      <span class="logo-ornament">♕</span><span class="logo-name">PANRUTI</span><span class="logo-subtitle">RESTAURANT</span><span class="logo-tagline">GOOD FOOD　•　HAPPY PEOPLE　•　ALWAYS TOGETHER</span>
+    </a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="./index.html">Home</a><a href="./about.html">About Us</a><a href="./ambience.html">Our Ambience</a><a href="./menu.html">Menu</a><a href="./booking.html">Table Booking</a><a href="./services.html">Services</a><a class="active" href="./media.html">Media</a><a href="./contact.html">Contact Us</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="gallery-hero">
+      <div>
+        <div class="eyebrow">A little taste of our world</div>
+        <h1>Moments Worth<br>Gathering For</h1>
+        <p>From beautiful plates to warm gatherings, take a look at the experiences that make a meal feel special.</p>
+      </div>
+    </section>
+
+    <section class="gallery-section">
+      <div class="gallery-heading">
+        <div class="eyebrow">The gallery</div>
+        <h2>Food, Friends & Fine Moments</h2>
+        <p>Good food tastes even better when it comes with a welcoming atmosphere and people you love.</p>
+      </div>
+
+      <div class="gallery-grid">
+        <article class="gallery-card">
+          <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=1000&q=85" alt="Restaurant dining area with a warm welcoming atmosphere" loading="lazy">
+          <div class="gallery-caption"><span>Our space</span><h3>A Warm Welcome</h3></div>
+        </article>
+        <article class="gallery-card">
+          <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=900&q=85" alt="Freshly prepared colourful meal served on a plate" loading="lazy">
+          <div class="gallery-caption"><span>From our kitchen</span><h3>Made with Care</h3></div>
+        </article>
+        <article class="gallery-card">
+          <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=900&q=85" alt="Elegant restaurant interior with tables ready for guests" loading="lazy">
+          <div class="gallery-caption"><span>Ambience</span><h3>Settle In & Relax</h3></div>
+        </article>
+        <article class="gallery-card">
+          <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=1200&q=85" alt="A table filled with freshly cooked dishes" loading="lazy">
+          <div class="gallery-caption"><span>Food to remember</span><h3>Something Delicious for Everyone</h3></div>
+        </article>
+        <article class="gallery-card">
+          <img src="https://images.unsplash.com/photo-1515003197210-e0cd7184f8b5?auto=format&fit=crop&w=900&q=85" alt="Fresh food beautifully arranged for serving" loading="lazy">
+          <div class="gallery-caption"><span>Freshly served</span><h3>Every Detail Matters</h3></div>
+        </article>
+        <article class="gallery-card">
+          <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=900&q=85" alt="Decorated table set for a special celebration" loading="lazy">
+          <div class="gallery-caption"><span>Special occasions</span><h3>Celebrate Together</h3></div>
+        </article>
+      </div>
+
+      <div class="gallery-note">
+        <strong>Photo note:</strong> These are sample stock photos used to demonstrate the gallery layout. Replace them with your restaurant’s real food, interior and celebration photos before publishing.
+      </div>
+    </section>
+
+    <section class="gallery-cta">
+      <h2>Make Your Next Moment Special</h2>
+      <p>Planning a family meal or a celebration? Get in touch with us and let’s make it memorable.</p>
+      <a href="./booking.html">Reserve a Table</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div><strong>PANRUTI RESTAURANT</strong><p>Good food. Happy people. Always together.</p></div>
+      <div class="footer-links">
+        <a href="./about.html">About</a><a href="./menu.html">Menu</a><a href="./booking.html">Booking</a><a href="./contact.html">Contact</a>
+      </div>
+      <small>© 2026 Panruti Restaurant. All rights reserved.</small>
+    </div>
+  </footer>
+  <script>
+    (() => {
+      const backups = [
+        "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=85",
+        "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=1200&q=85",
+        "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1200&q=85"
+      ];
+      document.querySelectorAll(".gallery-card img").forEach((img) => {
+        img.addEventListener("error", function () {
+          const attempt = Number(this.dataset.fallbackAttempt || "0");
+          if (attempt < backups.length) {
+            this.dataset.fallbackAttempt = String(attempt + 1);
+            this.src = backups[attempt];
+          } else {
+            this.onerror = null;
+            this.style.opacity = "0";
+            this.alt = "";
+          }
+        });
+        if (img.complete && img.naturalWidth === 0) {
+          img.dispatchEvent(new Event("error"));
+        }
+      });
+    })();
+  </script>
+</body>
+</html>
